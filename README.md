@@ -1,4 +1,4 @@
-# prodabel-web-docs
+# Web-docs
 
 ## Project setup
 ```
