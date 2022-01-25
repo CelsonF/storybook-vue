@@ -1,7 +1,7 @@
 # Web Docs with Storybook in Vue 2.x
 
 <div>
- <img height="20" width="100" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white">
+ <img height="50" width="180" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white">
 </div>
 
 ## Project setup
