@@ -83,6 +83,8 @@
         >
       </li>
     </ul>
+    <h4>Teste de Bootstrap vue</h4>
+    <b-button variant="success">Teste</b-button>
   </div>
 </template>
 
