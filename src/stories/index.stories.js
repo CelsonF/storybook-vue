@@ -5,16 +5,13 @@ export default {
   component: "Button",
 };
 
-export const withSlot = () => ({
+const Template = (args, { argTypes }) => ({
   components: { Button },
-
-  template: `
-  <Button>Slot</Button>
-  `,
+  props: Object.keys(argTypes),
+  template: '<b-button :variant="variant">TESTE</b-button>',
 });
 
-export const withText = () => ({
-  render() {
-    return <b-button> Teste </b-button>;
-  },
-});
+export const ButtonDefault = Template.bind({});
+ButtonDefault.args = {
+  Variant: "primary",
+};
