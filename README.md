@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Web Docs with Storybook(6.5.8)  in Vue 2.x
+=======
+# Web Docs with Storybook(6.5.28)  in Vue 2.x
+>>>>>>> 5982323d6942060eed7294f8763908ffbee3b23c
 
 <div style="display: inline_block"><br>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"  align="center" alt="Celson-Vue" height="30" width="40" />
