@@ -1,4 +1,4 @@
-# Web Docs with Storybook(6.0.28)  in Vue 2.x
+# Web Docs with Storybook(6.5.8)  in Vue 2.x
 
 <div style="display: inline_block"><br>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"  align="center" alt="Celson-Vue" height="30" width="40" />
@@ -27,7 +27,7 @@ npm run lint
 
 
 ## Storybook
-### Compiles storybook for development 
+### Compiles storybook for development
 ```
 npm run storybook:serve
 ```
@@ -38,10 +38,10 @@ npm run storybook:build
 
 
 ### Customize configuration
-See more about VUE [Configuration Reference](https://cli.vuejs.org/config/). 
+See more about VUE [Configuration Reference](https://cli.vuejs.org/config/).
 
-See more about Storybook 6.0.0 [Reference](https://cli.vuejs.org/config/). 
+See more about Storybook 6.0.0 [Reference](https://cli.vuejs.org/config/).
 
-See more about Bootstrap 4.6.x [Reference](https://getbootstrap.com/docs/5.1/getting-started/introduction/). 
+See more about Bootstrap 4.6.x [Reference](https://getbootstrap.com/docs/5.1/getting-started/introduction/).
 
-See more about Bootstrap Vue [Reference](https://bootstrap-vue.org/docs). 
+See more about Bootstrap Vue [Reference](https://bootstrap-vue.org/docs).

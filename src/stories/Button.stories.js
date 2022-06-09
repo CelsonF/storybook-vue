@@ -1,42 +1,46 @@
-import Button from "../components/Button";
+import MyButton from './Button.vue';
 
+// More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: "Molecules/Button",
-  component: Button,
+  title: 'Example/Button',
+  component: MyButton,
+  // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
+  argTypes: {
+    backgroundColor: { control: 'color' },
+    size: {
+      control: { type: 'select' },
+      options: ['small', 'medium', 'large'],
+    },
+  },
 };
 
-// 👇 We create a “template” of how args map to rendering
-const Template = () => ({
-  template: `
-	<div>
-    <b-button>Button</b-button>
-    <b-button variant="danger">Button</b-button>
-    <b-button variant="success">Button</b-button>
-    <b-button variant="outline-primary">Button</b-button>
-</div>
-	`,
+// More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
+const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { MyButton },
+  template: '<my-button @onClick="onClick" v-bind="$props" />',
 });
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Primary = Template.bind({});
+// More on args: https://storybook.js.org/docs/vue/writing-stories/args
+Primary.args = {
+  primary: true,
+  label: 'Button',
+};
 
-// import { storiesOf } from "@storybook/vue";
-// // Button.stories.js
-// import Button from "./Button.vue";
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: 'Button',
+};
 
-// export default {
-//   title: "Button",
-//   component: Button,
-// };
+export const Large = Template.bind({});
+Large.args = {
+  size: 'large',
+  label: 'Button',
+};
 
-// storiesOf("Button", module)
-//   .addParameters({ component: Button })
-//   .add("default", () => ({
-//     template: "<b-button> TESTE </b-button>",
-//   }))
-//   .add("success", () => ({
-//     template: "<b-button variant='success'>TESTE</b-button>",
-//   }))
-//   .add("danger", () => ({
-//     template: "<b-button variant='danger'>TESTE</b-button>",
-//   }));
+export const Small = Template.bind({});
+Small.args = {
+  size: 'small',
+  label: 'Button',
+};
