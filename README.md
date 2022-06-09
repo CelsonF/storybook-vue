@@ -1,4 +1,4 @@
-# Web Docs with Storybook(6.0.28)  in Vue 2.x
+# Web Docs with Storybook(6.5.28)  in Vue 2.x
 
 <div style="display: inline_block"><br>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"  align="center" alt="Celson-Vue" height="30" width="40" />
